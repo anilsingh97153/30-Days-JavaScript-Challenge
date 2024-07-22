@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      #dropdown option[disabled] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>This is a event handling demo.</h2>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, modi sint
+      dolor nam magnam qui enim? Quibusdam voluptates officiis, explicabo
+      debitis magni accusantium quia enim iusto vero animi sequi recusandae.
+    </p>
+    <button type="button" class="btn">Click to change above paragraph.</button
+    ><br /><br />
+    <button type="button" class="toggle-img-btn">
+      Toggle Image Visibility
+    </button>
+    <img
+      class="toggle-img"
+      src="https://images.unsplash.com/photo-1717457779554-6579b29b6f83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="a-woman-sitting-in-a-car-with-a-shopping-bag"
+      width="500"
+      height="500"
+      style="object-fit: contain"
+    />
+
+    <label for="keydown"
+      >Keydown:
+      <input
+        type="text"
+        name="name"
+        id="keydown"
+        placeholder="Enter something..." /></label
+    ><br /><br />
+    <label for="keyup"
+      >Keyup:
+      <input
+        type="text"
+        name="name"
+        id="keyup"
+        placeholder="Enter something..." /><br
+    /></label>
+
+    <br />
+
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name..." />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email..." /><br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown">
+      <option value="" disabled selected>Choose an option</option>
+      <option value="Option 1">option 1</option>
+      <option value="Option 2">option 2</option>
+      <option value="Option 3">option 3</option>
+      <option value="Option 4">option 4</option>
+      <option value="Option 5">option 5</option>
+    </select>
+
+    <p class="option-para">Selected option will appear here.</p>
+    <br />
+    <button class="addListItem" type="button">Add List item</button>
+    <ul class="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+
+    <p class="selected-list-item">Clicked list item will appear here.</p>
+    <script src="01_Event_Handling.js"></script>
+  </body>
+</html>
