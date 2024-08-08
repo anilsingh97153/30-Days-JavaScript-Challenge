@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+}
+
+h1 {
+    padding:8px;
+}
+
+.btn {
+    padding: 8px 16px;
+    color:aliceblue;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+}
+
+.new-task-btn {
+    padding: 8px 16px;
+    color:aliceblue;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+}
+
+.edit-btn {
+    padding: 8px 16px;
+    color:aliceblue;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+}
+
+#task-form {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.save-btn {
+    padding: 8px;
+    color:aliceblue;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+}
+
+.save-btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 69, 69);
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 69, 69);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 69, 69);
+}
+
+.new-task-btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 69, 69);
+}
+
+input {
+    padding: 8px 16px;
+}
+
+input, textarea {
+    width: 250px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    padding: 8px;
+    vertical-align: top;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.task-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
