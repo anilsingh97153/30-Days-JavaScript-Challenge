@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Sidebar -->
+      <div id="sidebar" style="display: none;">
+        <h3>User Info</h3>
+        <p><strong>Username:</strong> <span id="sidebarUsername"></span></p>
+        <p><strong>Name:</strong> <span id="sidebarName"></span></p>
+        <img id="sidebarProfilePic" src="" alt="Profile Picture" />
+        <button id="editProfileButton">Edit Profile</button>
+        <div id="notificationsContainer">
+          <h4>Notifications</h4>
+          <ul id="notificationsList"></ul>
+        </div>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginFormContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <!-- Dashboard Section -->
+      <div id="dashboardContainer" style="display: none;">
+        <h2>Welcome, <span id="userDisplayName"></span></h2>
+        <button id="logoutButton" type="button">Logout</button>
+      </div>
+
+      <!-- Create Post Form -->
+      <div id="postFormContainer" style="display: none;">
+        <h3>Create a Post</h3>
+        <textarea
+          id="postContent"
+          rows="4"
+          placeholder="What's on your mind?"
+        ></textarea>
+        <button id="postButton" type="button">Post</button>
+      </div>
+
+      <!-- Posts Display -->
+      <div id="postContainer" style="display: none;">
+        <h3>Posts</h3>
+        <div id="postList"></div>
+      </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profilePage" style="display: none;">
+      <h2>Edit Profile</h2>
+      <form id="profileForm">
+        <input type="text" id="profileUsername" placeholder="Username" required />
+        <input type="text" id="profileName" placeholder="Name" required />
+        <input type="file" id="profilePic" accept="image/*" />
+        <button type="submit">Save</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
