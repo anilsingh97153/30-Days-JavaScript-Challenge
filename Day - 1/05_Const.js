@@ -2,6 +2,6 @@
 const val = 13;
 console.log(`Initial value: ${val}`);
 val = 15;
-console.log(`Value after ressigning: ${val}`);
+console.log(`Value after resigning: ${val}`);
 
 // TypeError: Assignment to constant variable.
